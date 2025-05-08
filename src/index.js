@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const SPRING_BOOT_URL = 'http://springboot-microservice:8080';
+const SPRING_BOOT_URL = 'http://springboot-svc.demo-project.svc.cluster.local:8080';
 
 app.get('/api/tasks', async (req, res) => {
   try {
